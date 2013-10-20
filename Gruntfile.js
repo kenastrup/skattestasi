@@ -85,6 +85,7 @@ module.exports = function (grunt) {
                         return [
                             mountFolder(connect, '.tmp'),
                             mountFolder(connect, 'test'),
+                            mountFolder(connect, 'app'),
                             mountFolder(connect, yeomanConfig.app)
                         ];
                     }
@@ -123,8 +124,8 @@ module.exports = function (grunt) {
         mocha: {
             all: {
                 options: {
-                    run: true,
-                    urls: ['http://localhost:<%= connect.options.port %>/index.html']
+                    run: false,
+                    urls: ['http://localhost:<%= connect.test.options.port %>/index.html']
                 }
             }
         },
