@@ -17,27 +17,27 @@ define([
             });
         });
 
-        it('navn()', function () {
+        it('skal returnere navn', function () {
             expect(mistenkeligPerson.navn()).to.equal('Ken Are Astrup');
         });
 
-        it('telefon()', function () {
+        it('skal returnere telefon', function () {
             expect(mistenkeligPerson.telefon()).to.equal('12345678');
         });
 
-        it('email()', function () {
+        it('skal returnere email', function () {
             expect(mistenkeligPerson.email()).to.equal('ken.astrup@gmail.com');
         });
 
-        it('mistenkelighetsgrad()', function () {
+        it('skal returnere mistenkelighetsgrad', function () {
             expect(mistenkeligPerson.mistenkelighetsgrad()).to.equal(1);
         });
 
-        it('sjekketUt()', function () {
+        it('skal returnere sjekketUt', function () {
             expect(mistenkeligPerson.sjekketUt()).to.equal(false);
         });
 
-        it('sjekkUt()', function () {
+        it('skal sjekke ut en person av SS registret ', function () {
             mistenkeligPerson.sjekkUt();
             expect(mistenkeligPerson.sjekketUt()).to.equal(true);
 
