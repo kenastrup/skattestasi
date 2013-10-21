@@ -23,7 +23,7 @@
         <![endif]-->
 
 
-        <div class="container">
+        <div style="margin:0 30px">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
                     <li class="active"><a href="#">Home</a></li>
@@ -43,29 +43,32 @@
             <div id="registrereNyMistenkt" class="well">
                 <h3> Registrere en ny mistenkelig person </h3>
 
-                <div class="row-fluid">
-                    <div class="span3">
+                <form role="form">
+
+                <div class="row">
+                    <div class="col-md-3">
                         <label for="navn">Navn</label>
-                        <input id="navn" type="text" placeholder="Navn"/>
+                        <input id="navn" type="text" placeholder="Navn" class="form-control"/>
                     </div>
-                    <div class="span2">
+                    <div class="col-md-2">
                         <label for="telefon">Telefon</label>
-                        <input id="telefon" style="width:80px" type="number" size="8" min="10000000" max="99999999"
-                               placeholder="Telefon"/>
+                        <input id="telefon" style="width:120px" type="number" size="8" min="10000000" max="99999999"
+                               placeholder="Telefon" class="form-control"/>
                     </div>
-                    <div class="span4">
+                    <div class="col-md-4">
                         <label for="email"> e-mail </label>
-                        <input id="email" type="email" placeholder="e-mail"/>
+                        <input id="email" type="email" placeholder="e-mail" class="form-control"/>
                     </div>
-                    <div class="span2">
-                        <label for="mistenkelighetsgrad"> Mistenkelighetsgrad </label>
+                    <div class="col-md-2">
+                        <label for="mistenkelighetsgrad"> Grad </label>
                         <input id="mistenkelighetsgrad" type="range" min="1" max="5" default="1" style="width:100%"/>
                     </div>
-                    <div class="span1">
-                        <input id="sladre" type="submit" value="Sladre">
+                    <div class="col-md-1">
+                        <input id="sladre" type="button" class="btn btn-primary" value="Sladre">
                     </div>
 
                 </div>
+                </form>
             </div>
             <div id="registrerte-mistenkte"/>
 

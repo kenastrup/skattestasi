@@ -13,7 +13,7 @@ define([
         tagName: 'tr',
 
         events: {
-            'click .glyphicon-remove': 'sjekkUt'
+            'click .glyphicon-remove-circle': 'sjekkUt'
         },
 
         sjekkUt: function () {
