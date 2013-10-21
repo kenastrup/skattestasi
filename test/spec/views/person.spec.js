@@ -50,13 +50,13 @@ define([
             });
 
             //personen er ikke sjekket ut,
-            expect(personView.$el.get(0).innerHTML).to.contain('glyphicon-remove"');
+            expect(personView.$el.get(0).innerHTML).to.contain('glyphicon-remove-circle"');
 
             fakeResponse(mistenkeligPersonSjekketUt.toJSON(), function () {
-                personView.$('.glyphicon-remove').click();
+                personView.$('.glyphicon-remove-circle').click();
             });
 
-            expect(personView.$el.get(0).innerHTML).not.to.contain('glyphicon-remove');
+            expect(personView.$el.get(0).innerHTML).not.to.contain('glyphicon-remove-circle');
         });
     });
 });
