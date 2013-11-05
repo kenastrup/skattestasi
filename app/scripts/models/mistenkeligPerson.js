@@ -1,12 +1,12 @@
 /*global define*/
-define([
-    'underscore',
-    'backbone',
-    'backbone.localStorage'
-], function (_, Backbone) {
+define(function (require) {
     'use strict';
+    var Backbone = require('backbone'),
+        MistenkeligPerson;
 
-    var MistenkeligPerson = Backbone.Model.extend({
+    require('backbone.localStorage');
+
+    MistenkeligPerson = Backbone.Model.extend({
         localStorage: new Backbone.LocalStorage('MistenkeligePersoner'),
 
         defaults: {

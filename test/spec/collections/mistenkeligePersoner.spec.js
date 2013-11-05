@@ -29,7 +29,7 @@ define([
                 navn: 'Erik Mong',
                 telefon: '34567890',
                 email: 'erik.mong@skatteetaten.no',
-                mistenkelighetsgrad: 3,
+                mistenkelighetsgrad: 3
             }));
 
         });
